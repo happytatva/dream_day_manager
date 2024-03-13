@@ -1,0 +1,128 @@
+//Break points
+@mixin bp($point) {
+     $xxxs-max: "(max-width: 374px)";
+     $xxxs-max: "(max-width: 374px)";
+     $xxxxs-max: "(max-width: 375px)";
+     $xxxs-min: "(max-width: 375px)";
+     $xxs-max: "(max-width: 480px)";
+     $xs-max: "(max-width: 575px)";
+     $sm-max: "(max-width: 767px)";
+     $smlg-max: "(max-width: 768px)";
+     $smd-max: "(max-width: 991px)";
+     $md-min: "(min-width: 768px)";
+     $md-max: "(max-width: 1023px)";
+     $tablet-max:"(max-width: 1024px)";
+     $lg-max: "(max-width: 1140px)";
+     $xlg-max: "(max-width: 1280px)";
+     $xl-min: "(min-width: 1439px)";
+     $lg-min: "(min-width: 1921px)";
+     $xl-max: "(max-width: 1439px)";
+     $xlg-md: "(max-width: 1440px)";
+     $xxl-max: "(max-width: 1499px)";
+     $xxxl-max: "(max-width: 1680px)";
+     $xxxl-md:"(max-width: 1550px)";
+    @if $point==xxxs-max {
+       @media #{$xxxs-max} {
+         @content;
+       }
+     }
+     @if $point==xxxxs-max {
+       @media #{$xxxxs-max} {
+         @content;
+       }
+     }
+     @else if $point==xxxs-min {
+       @media #{$xxxs-min} {
+         @content;
+       }
+     }
+     @else if $point==xxs-max {
+       @media #{$xxs-max} {
+         @content;
+       }
+     }
+     @else if $point==xs-max {
+       @media #{$xs-max} {
+         @content;
+       }
+     }
+     @else if $point==sm-max {
+       @media #{$sm-max} {
+         @content;
+       }
+     }
+     @else if $point==smlg-max {
+       @media #{$smlg-max} {
+         @content;
+       }
+     }
+     @else if $point==smd-max {
+       @media #{$smd-max} {
+         @content;
+       }
+     }
+   
+     @else if $point==md-min {
+       @media #{$md-min} {
+         @content;
+       }
+     }
+   
+     @else if $point==md-max {
+       @media #{$md-max} {
+         @content;
+       }
+     }
+     @else if $point==tablet-max {
+       @media #{$tablet-max} {
+         @content;
+       }
+     }
+   
+     @else if $point==lg-max {
+       @media #{$lg-max} {
+         @content;
+       }
+     }
+     @else if $point==xlg-max {
+       @media #{$xlg-max} {
+         @content;
+       }
+     }
+     @else if $point==xl-min {
+       @media #{$xl-min} {
+         @content;
+       }
+     }
+      @else if $point==lg-min {
+       @media #{$lg-min} {
+         @content;
+       }
+     }
+     @else if $point==xl-max {
+       @media #{$xl-max} {
+         @content;
+       }
+     }
+     @else if $point==xlg-md {
+       @media #{$xlg-md} {
+         @content;
+       }
+     }
+     @else if $point==xxl-max {
+       @media #{$xxl-max} {
+         @content;
+       }
+     }
+     @else if $point==xxxl-max {
+       @media #{$xxxl-max} {
+         @content;
+       }
+     }
+     @else if $point==xxxl-md {
+       @media #{$xxxl-md} {
+         @content;
+       }
+     }
+   
+   }
