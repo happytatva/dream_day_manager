@@ -171,7 +171,7 @@ $(document).ready(function () {
   //   -------------about/porfolio tabbing------------------
 
   $("ul.tabs li .tab-link").click(function () {
-    var tab_id = $(this).attr("tab-id");
+    var tab_id = $(this).attr("data-tab");
 
     $("ul.tabs li .tab-link").removeClass("active");
     $(".tab-content").removeClass("active");
