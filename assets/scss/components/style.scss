@@ -685,6 +685,12 @@ section {
     color: $white;
     padding: 12px 0;
     .custom-col {
+      &:nth-child(2) {
+        padding-left: 75px;
+        @include bp(smd-max) {
+          padding-left: 0.75rem;
+        }
+      }
       margin: 16px 0 12px;
       @include bp(xs-max) {
         margin: 8px 0;
@@ -741,6 +747,14 @@ section {
           height: 20px;
           min-width: 20px;
           margin-top: 5px;
+          @include bp(xs-max) {
+            height: 18px;
+            min-width: 18px;
+          }
+          @include bp(xxs-max) {
+            height: 15px;
+            min-width: 15px;
+          }
           img {
             height: 100%;
           }
@@ -810,11 +824,13 @@ section {
       }
       .left-col {
         .company-logo {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
           .img-wrap {
-            height: 30px;
-            min-width: 115px;
+            height: 22px;
             @include bp(xs-max) {
-              height: 25px;
+              height: 20px;
             }
             img {
               height: 100%;
@@ -851,6 +867,11 @@ section {
             text-align: center;
             padding: 10px;
             @include transition($transition);
+            @include bp(xs-max) {
+              width: 30px;
+              height: 30px;
+              padding: 8px;
+            }
             &:hover {
               background-color: $pink-1;
             }
