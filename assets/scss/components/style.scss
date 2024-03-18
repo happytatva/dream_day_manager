@@ -110,6 +110,7 @@ a {
           width: 27px;
           height: 1.5px;
           background-color: $white;
+          @include transition($transition);
           @include bp(xxs-max) {
             width: 25px;
           }
