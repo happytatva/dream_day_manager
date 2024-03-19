@@ -965,11 +965,7 @@ section {
           left: 0;
           right: 0;
           top: 50%;
-          padding: 0 15px;
-          padding-top: 80px;
-          @include bp(sm-max) {
-            padding-top: 50px;
-          }
+          padding: 50px 15px 0;
           @include bp(xxs-max) {
             padding-top: 30px;
           }
