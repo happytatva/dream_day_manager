@@ -907,7 +907,6 @@ section {
     }
   }
 }
-
 .up-arrow-link {
   opacity: 0;
   width: 45px;
@@ -2999,17 +2998,20 @@ section {
           .icon-wrap {
             height: 35px;
             width: 35px;
-            img {
-              height: 100%;
-              width: 100%;
-            }
+            min-width: 35px;
             @include bp(xs-max) {
               height: 30px;
               width: 30px;
+              min-width: 30px;
             }
             @include bp(xxs-max) {
               height: 25px;
               width: 25px;
+              min-width: 25px;
+            }
+            img {
+              height: 100%;
+              width: 100%;
             }
           }
           .content-wrap {
@@ -3035,6 +3037,7 @@ section {
               }
               a {
                 color: $body-font;
+                word-break: break-all;
                 &:hover {
                   color: $pink-1;
                 }
